@@ -4,11 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/index.js"
+    "test": "mocha",
+    "assert": "mocha test/assert.test.js",
+    "should": "mocha test/should.test.js",
+    "chai": "mocha test/chai.test.js",
+    "reporter": "mocha --reporter list",
+    "bail": "mocha --bail",
+    "grep": "mocha --grep '1 加 1等于2'",
+    "compiler": "mocha test/chai.test.js --compilers js:babel-core/register",
+    "timeout": "mocha test/chai.test.js -t 5000"
   },
   "author": "Jensen",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "should": "^13.2.1"
   }
 }

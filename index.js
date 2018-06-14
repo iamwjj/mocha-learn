@@ -1,6 +1,10 @@
 //加法函数
 function add(a, b){
-	return a + b;
+	if(typeof a != 'number' || typeof a !='number'){
+		return new TypeError('Both a and b must be a number')
+	}else{
+        return a + b;
+	}
 }
 
-exports.add = add;
+module.exports.add = add;
