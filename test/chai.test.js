@@ -2,8 +2,8 @@ const chai = require('chai'),
     expect = chai.expect,
     should = chai.should();
 
-const Math = require('../index')
-// import Math from '../index.js';
+// const Math = require('../index')
+import Math from '../index.js';
 
 let foo = false;
 
