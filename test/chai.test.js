@@ -54,10 +54,10 @@ describe('chai.js', () => {
     //     }, 3000)
     // })
 
-    it('Promise', function() {
-        // return Promise.resolve('resolve promise');
-        return Promise.reject('rejected promise');
-    });
+    // it('Promise', function() {
+    //     // return Promise.resolve('resolve promise');
+    //     return Promise.reject('rejected promise');
+    // });
 
 
 })

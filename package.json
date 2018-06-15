@@ -12,13 +12,15 @@
     "bail": "mocha --bail",
     "grep": "mocha --grep '1 加 1等于2'",
     "compiler": "mocha test/chai.test.js --compilers js:babel-core/register",
-    "timeout": "mocha test/chai.test.js -t 5000"
+    "timeout": "mocha test/chai.test.js -t 5000",
+    "coverage": "istanbul cover _mocha -- test/chai.test.js"
   },
   "author": "Jensen",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.1.1"
   },
   "dependencies": {
